@@ -1,0 +1,5 @@
+Versão Web_V4_4_maquinas - Versão otimizada para o Web Server do CLP (4 máquinas + Histórico de Produção).
+- Corrigido loop de leitura cíclica (setTimeout de 2000ms reais sem sobrecarregar o CLP).
+- Eliminadas inicializações duplicadas e escritas paralelas simultâneas.
+- Tratamento completo de erros no Login (usuário/senha incorretos, IP inválido ou falha de conexão).
+- Removidos arquivos não utilizados (~248 KB economizados na memória do CLP).

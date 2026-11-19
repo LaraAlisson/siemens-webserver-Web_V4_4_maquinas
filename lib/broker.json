@@ -1,0 +1,36 @@
+
+{
+"val" : ":="ConfigIpLMQTT".readerDadosBroker:",
+"len" :	"4;4;4;4;",
+"typ" :	"2;2;2;2;",
+"str" : ""
+}
+
+
+
+
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".userNameMaq' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".passwordMaq' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".connectionIdMaqA' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".clientIdentifierMaqA' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".connectionIdMaqB' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".clientIdentifierMaqB' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".connectionIdMaqC' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".clientIdentifierMaqC' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".connectionIdMaqD' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".clientIdentifierMaqD' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".ipAdressBroker[0]' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".ipAdressBroker[1]' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".ipAdressBroker[2]' -->
+<!-- AWP_In_Variable Name='"ConfigIpLMQTT".ipAdressBroker[3]' -->
+
+
+
+
+
+
+
+
+
+
+

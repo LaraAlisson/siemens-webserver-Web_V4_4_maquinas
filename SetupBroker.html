@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Videplast</title>
+    <link rel="icon" href="img/vd.ico" type="image/x-icon">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/S7_framework.js"></script>
+    <script src="lib/broker.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Configuração Broker MQTT.</h1>
+        <table class="table01">
+            <tr>
+                <th class="coluna1">Nome da variável</th>
+                <th class="coluna2">Valor da variável</th>
+                <th class="coluna3">Adicionar novo valor</th>
+            </tr>
+            <tr>
+                <td>Nome usuário acesso ao broker:</td>
+                <td id="actNameUser">:="ConfigIpLMQTT".userNameMaq:</td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="userNameMaq" size="2" placeholder="Ex: admin">
+                        <input type="button" id="userNameButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Senha de acesso ao Broker:</td>
+                <td id="actPasswordMaq">:="ConfigIpLMQTT".passwordMaq:</td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="passwordMaq" size="2" placeholder="Ex: vide01">
+                        <input type="button" id="passwordButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Identificador do cliente para máquina A (clientIdentifier):</td>
+                <td id="actClientIdentifierMaqA">:="ConfigIpLMQTT".clientIdentifierMaqA:</td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="clientIdentifierMaqA" size="2" placeholder="Ex: maq149">
+                        <input type="button" id="clientIdentifierMaqAButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Identificador do cliente para máquina B (clientIdentifier):</td>
+                <td id="actClientIdentifierMaqB">:="ConfigIpLMQTT".clientIdentifierMaqB:</td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="clientIdentifierMaqB" size="2" placeholder="Ex: maq931">
+                        <input type="button" id="clientIdentifierMaqBButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Identificador do cliente para máquina C (clientIdentifier):</td>
+                <td id="actClientIdentifierMaqC">:="ConfigIpLMQTT".clientIdentifierMaqC:</td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="clientIdentifierMaqC" size="2" placeholder="Ex: maq931">
+                        <input type="button" id="clientIdentifierMaqCButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Identificador do cliente para máquina D (clientIdentifier):</td>
+                <td id="actClientIdentifierMaqD">:="ConfigIpLMQTT".clientIdentifierMaqD:</td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="clientIdentifierMaqD" size="2" placeholder="Ex: maq931">
+                        <input type="button" id="clientIdentifierMaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>IP do broker:</td>
+                <td id="actId1"></td>
+                <td>
+                    <form class="inputIP" onsubmit="return false;">
+                        <input type="text" id="ipB01" size="2" style="width: 50px;" placeholder="010">
+                        <input type="text" id="ipB02" size="2" style="width: 50px;" placeholder="171">
+                        <input type="text" id="ipB03" size="2" style="width: 50px;" placeholder="028">
+                        <input type="text" id="ipB04" size="2" style="width: 50px;" placeholder="150">
+                        <input type="button" id="IpBrokerButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <h2>Obs. Atualizar página para carregar os valores na Tela.</h2>
+        <div class="nave">
+            <a id="voltar" href="StartApi.html"><input type="submit" value="Voltar"></a>
+        </div>
+    </div>
+</body>
+</html>

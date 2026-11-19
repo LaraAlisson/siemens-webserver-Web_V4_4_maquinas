@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Videplast</title>
+    <link rel="icon" href="img/vd.ico" type="image/x-icon">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/S7_framework.js"></script>
+    <script src="lib/HistProd.js"></script>
+</head>
+<body>
+    <div class="container" id="sta">
+        
+        <!-- Bloco Flexbox para agrupar as tabelas lado a lado -->
+        <div class="grid-tabelas">
+            
+            <!-- Máquina A -->
+            <div class="coluna-tabela">
+                <h1>Histórico OP Maq A nº SAP: <span id="actNumeroSAPmaqA"></span></h1>
+                <table class="table01">
+                    <thead>
+                        <tr>
+                            <th class="coluna1">Nome da variável</th>
+                            <th class="coluna2">Valor da variável</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaMaqA">
+                        <!-- O JS vai injetar aqui -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Máquina B -->
+            <div class="coluna-tabela">
+                <h1>Histórico OP Maq B nº SAP: <span id="actNumeroSAPmaqB"></span></h1>
+                <table class="table01">
+                    <thead>
+                        <tr>
+                            <th class="coluna1">Nome da variável</th>
+                            <th class="coluna2">Valor da variável</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaMaqB">
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Máquina C -->
+            <div class="coluna-tabela">
+                <h1>Histórico OP Maq C nº SAP: <span id="actNumeroSAPmaqC"></span></h1>
+                <table class="table01">
+                    <thead>
+                        <tr>
+                            <th class="coluna1">Nome da variável</th>
+                            <th class="coluna2">Valor da variável</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaMaqC">
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Máquina D -->
+            <div class="coluna-tabela">
+                <h1>Histórico OP Maq D nº SAP: <span id="actNumeroSAPmaqD"></span></h1>
+                <table class="table01">
+                    <thead>
+                        <tr>
+                            <th class="coluna1">Nome da variável</th>
+                            <th class="coluna2">Valor da variável</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaMaqD">
+                    </tbody>
+                </table>
+            </div>
+
+        </div> <!-- Fim do grid-tabelas -->
+
+        <div class="nave" style="text-align: center; margin-top: 30px;">
+            <!-- Correção para o botão herdar a formatação CSS do input[type="submit"] -->
+            <a id="voltar" href="StartApi.html"><input type="submit" value="Voltar"></a>
+        </div>
+    </div>
+</body>
+</html>

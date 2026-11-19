@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Videplast</title>
+    <link rel="icon" href="img/vd.ico" type="image/x-icon">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/S7_framework.js"></script>
+    <script src="lib/SetupEncoderMaqD.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calibração de Velocidades e Metros Máquina D.</h1>
+        <table class="table01">
+            <tr>
+                <th class="coluna1">Variável</th>
+                <th class="coluna2">Valor</th>
+                <th class="coluna3">Adiciona novo valor</th>
+            </tr>
+            <tr>
+                <td>Número SAP da máquina:</td>
+                <td id="actNumeroSAPmaqD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="NumeroSAPmaqD" size="2">
+                        <input type="button" id="NumeroSAPmaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Velocidade máquina (m/m):</td>
+                <td id="actVelocidadeMaqD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="velocidadeMaqD" size="2">
+                        <input type="button" id="velocidadeMaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Metros rodados para ajuste de velocidade:</td>
+                <td id="actMetrosRodadosMaqD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="metrosRodadosMaqD" size="2" placeholder="Ex: 1000">
+                        <input type="button" id="metrosRodadosMaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Metros rodados para conferência:</td>
+                <td id="idConfMetrosRodadosMaqD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="confMetrosRodadosMaqD" size="2">
+                        <input type="button" id="confMetrosRodadosMaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Leitura encoder:</td>
+                <td id="actLeituraEncoderMaqD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="leituraEncoderMaqD" size="2">
+                        <input type="button" id="leituraEncoderMaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Circunferência rolo encoder calculado:</td>
+                <td id="actCircuferenciaRoloMaqD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="circuferenciaRoloMaqD" size="2">
+                        <input type="button" id="circuferenciaRoloMaqDButton" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div class="submit-calibration">
+            <div class="titulo">
+                <h2>Habilita Calibração</h2>
+            </div>
+            <div class="menu">
+                <div class="static_field_button">
+                    <input type="button" id="resetEncButtonMqD" value="Reset Encoder">
+                </div>
+                <div class="static_field_button">
+                    <form method="post" action="" onsubmit="return false;">
+                        <input type="button" id="CalButtonMqD" value="Calibrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nave">
+            <a id="voltar" href="StartApi.html"><input type="submit" value="Voltar"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Videplast</title>
+    <link rel="icon" href="img/vd.ico" type="image/x-icon">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/S7_framework.js"></script>
+    <script src="lib/StartMaqD.js"></script>
+</head>
+<body>
+    <div class="container" id="sta">
+        <h1>Setup Máquina D.</h1>
+        <table class="table01">
+            <tr>
+                <th class="coluna1">Nome da variável</th>
+                <th class="coluna2">Valor da variável</th>
+                <th class="coluna3">Adicionar novo valor</th>
+            </tr>
+            <tr>
+                <td>Número do controlador (CLP):</td>
+                <td id="actNumeroClpD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="numeroClpD" size="2" placeholder="Ex: 0001">
+                        <input type="button" id="numeroClpButtonD" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Número SAP da máquina D:</td>
+                <td id="numeroMaquinaD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="numeroSapD" size="2" placeholder="Ex: 10000047">
+                        <input type="button" id="numeroSapButtonD" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Pulsos por resolução do encoder (PPR):</td>
+                <td id="pulsosEncoderPPRD"></td>
+                <td>
+                    <form onsubmit="return false;">
+                        <input type="text" id="encoderD" size="2" placeholder="Ex: 1024">
+                        <input type="button" id="encoderButtonD" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>IP Medidor de Energia:</td>
+                <td id="id1D"></td>
+                <td>
+                    <form class="inputIP" onsubmit="return false;">
+                        <input type="text" id="ip01D" size="2" style="width: 50px;" placeholder="010">
+                        <input type="text" id="ip02D" size="2" style="width: 50px;" placeholder="171">
+                        <input type="text" id="ip03D" size="2" style="width: 50px;" placeholder="028">
+                        <input type="text" id="ip04D" size="2" style="width: 50px;" placeholder="150">
+                        <input type="button" id="ipButtonMedidorD" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div class="nave">
+            <a id="voltar" href="StartApi.html"><input type="submit" value="Voltar"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+{
+    "val" : ":="DataMaquinaC".readerDadosMaqC:",
+    "len" :	"4;8;4;4;4;4;4;",
+    "typ" :	"2;2;2;2;2;2;2;",
+    "str" : ""
+    }
+    
+    
+    
+    <!-- AWP_In_Variable Name='"DataMaquinaC".dadosInputMaqC[0]' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".numeroClpC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".topicoPublicaMaqC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".topicoInscreve01MaqC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".topicoInscreve02MaqC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".mensagemOp01MaqC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".mensagemOp00MaqC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".mensagemLib01MaqC' -->
+    <!-- AWP_In_Variable Name='"DataMaquinaC".mensagemLib00MaqC' -->
+    <!-- AWP_In_Variable Name='"DadosCalibracao".qtdPulsosEncoderMaqC' -->
+    
+    
+    <!-- AWP_In_Variable Name='"ConfigIPMedidorEnergia".ipMedidorEnergiaMaqC[1]' -->
+    <!-- AWP_In_Variable Name='"ConfigIPMedidorEnergia".ipMedidorEnergiaMaqC[2]' -->
+    <!-- AWP_In_Variable Name='"ConfigIPMedidorEnergia".ipMedidorEnergiaMaqC[3]' -->
+    <!-- AWP_In_Variable Name='"ConfigIPMedidorEnergia".ipMedidorEnergiaMaqC[4]' -->
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,14 @@
+
+{
+    "val" : ":="DadosCalibracao".readerDadosCalibracaoMaqD:", 
+    "len" :	"8;4;4;8;8;8;",
+    "typ" :	"2;2;2;2;3;3;",
+    "str" : ""
+    }
+    
+    
+    
+    <!-- AWP_In_Variable Name='"DadosCalibracao".metrosRodadosMaqD' -->
+    <!-- AWP_In_Variable Name='"DadosCalibracao".habilitaCalibracaoMaqD' -->
+    <!-- AWP_In_Variable Name='"DadosCalibracao".resetEncoderMaqD' -->
+    

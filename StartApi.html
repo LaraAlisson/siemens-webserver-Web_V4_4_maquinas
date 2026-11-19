@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Videplast</title>
+	<link rel="icon" href="img/vd.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="lib/S7_framework.js"></script>
+	<script type="text/javascript" src="lib/toastr.min.js"></script>
+	<script type="text/javascript" src="lib/WebApi.js"></script>
+</head>
+
+<body>
+
+	<div id="plcLoginContainer"> <!-- Login Area-->
+		<div class="container" style="max-width: 30%; min-width: 320px; margin-top: 200px;">
+			<div id="content">
+				<h2>Acesso ao CLP</h2>
+				<form onsubmit="login(); return false;">
+					<div class="box-input-field">
+						<input type="text" class="input-field" id="plcIpAdress" placeholder="Endereço IP do CLP (Ex: 10.171.28.10)" autocomplete="username">
+						<input type="text" class="input-field" id="webServerUserName" placeholder="Usuário" autocomplete="username">
+						<input type="password" class="input-field" id="webServerUserpassword" placeholder="Senha" autocomplete="current-password">
+					</div>
+					<div id="loginErrorMsg" class="login-error" style="display: none;"></div>
+					<button type="submit" class="btn" id="loginBtn">Login</button>
+				</form>
+			</div>
+		</div>
+	</div> <!-- Login Area End-->
+
+	<div id="StartWebStatic" style="display: none;">
+		<!-- Navigation -->
+		<div class="container">
+			<h1>Controle Estatístico de Processos Empresa Videplast</h1>
+			<div class="menu">
+				<div class="maq">
+					<a id="cfMa" href="StartMaqA.html"><input type="submit" value="Configuração máquina A"></a>
+					<a id="caMa" href="SetupEncoderMaqA.html"><input type="submit" value="Calibração máquina A"></a>
+				</div>
+				<div class="maq">
+					<a id="cfMb" href="StartMaqB.html"><input type="submit" value="Configuração máquina B"></a>
+					<a id="caMb" href="SetupEncoderMaqB.html"><input type="submit" value="Calibração máquina B"></a>
+				</div>
+				<div class="maq">
+					<a id="cfMc" href="StartMaqC.html"><input type="submit" value="Configuração máquina C"></a>
+					<a id="caMc" href="SetupEncoderMaqC.html"><input type="submit" value="Calibração máquina C"></a>
+				</div>
+				<div class="maq">
+					<a id="cfMd" href="StartMaqD.html"><input type="submit" value="Configuração máquina D"></a>
+					<a id="caMd" href="SetupEncoderMaqD.html"><input type="submit" value="Calibração máquina D"></a>
+				</div>
+				<div class="maq">
+					<a id="cfBroker" href="SetupBroker.html"><input type="submit" value="Configuração Broker MQTT"></a>
+					<a id="cfHistProd" href="HistProd.html"><input type="submit" value="Histórico Produção"></a>
+				</div>
+			</div>
+
+			<div class="stsBlock">
+				<div class="statusIco">
+					<span class="imgSts">Conexão Broker Máquina A:<img src="img/status Desligado.png" id="statusBroMqA" alt="Desconectado"></span>
+					<span class="imgSts">Conexão ModBus Máquina A:<img src="img/status Desligado.png" id="statusMbMqA" alt="Desconectado"></span>
+				</div>
+				<div class="statusIco">
+					<span class="imgSts">Conexão Broker Máquina B:<img src="img/status Desligado.png" id="statusBroMqB" alt="Desconectado"></span>
+					<span class="imgSts">Conexão ModBus Máquina B:<img src="img/status Desligado.png" id="statusMbMqB" alt="Desconectado"></span>
+				</div>
+				<div class="statusIco">
+					<span class="imgSts">Conexão Broker Máquina C:<img src="img/status Desligado.png" id="statusBroMqC" alt="Desconectado"></span>
+					<span class="imgSts">Conexão ModBus Máquina C:<img src="img/status Desligado.png" id="statusMbMqC" alt="Desconectado"></span>
+				</div>
+				<div class="statusIco">
+					<span class="imgSts">Conexão Broker Máquina D:<img src="img/status Desligado.png" id="statusBroMqD" alt="Desconectado"></span>
+					<span class="imgSts">Conexão ModBus Máquina D:<img src="img/status Desligado.png" id="statusMbMqD" alt="Desconectado"></span>
+				</div>
+			</div>
+		</div>
+		<!--Fim Navigation-->
+	</div>
+
+</body>
+
+</html>
